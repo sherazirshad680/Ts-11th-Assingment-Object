@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <!-- // // Q NO 8. Define an object type Student with properties name (string), age (number), and grades (NumberArray).
+    // // Add a function type CalculateAverageGradeFn that returns the average grade.
+    interface Student {
+      name: string;
+      age: number;
+      grades: number[];
+    }
+    var StudentInfo: Student = {
+      name: `Sheraz`,
+      age: 15,
+      grades: [92, 65, 92, 86, 68, 78],
+    };
+    var studentsgrades: number[] = StudentInfo.grades;
+    type CalculateAverageGradeFn = (total: number) => void;
+    var CalculateAverageGrade: CalculateAverageGradeFn = (total) => {
+      var sum = studentsgrades.reduce((sum1, sum2) => sum1 + sum2);
+      return Math.round((sum / total) * 100);
+    };
+    console.log(`The average grade of students is ${CalculateAverageGrade(600)}`);
+    // // Q NO 9. Define a type Course with properties title (string), duration (number), and teacher (string).
+    // // Implement a function type GetCourseInfoFn that returns a formatted string containing all properties of a Course.
+    interface Course {
+      title: string;
+      duration: number;
+      teacher: string;
+    }
+    var course1: Course = {
+      title: `Computer`,
+      duration: 30,
+      teacher: `Sir Shoaib`,
+    };
+    type GetCourseInfoFn = () => string;
+    var Course_info: GetBookInfoFn = () =>
+      `Course title: ${course1.title} \nCourse duration: ${course1.duration}mins \nCourse teacher: ${course1.teacher}`;
+    console.log(Course_info());
+    // // Q NO 10. Create a type Product that represents an object with properties name (string) and price (number).
+    // // Define a function type ApplyDiscountFn that takes a Product object and a discount percentage and returns a new Product object with the discounted price.
+    type Product = {
+      name: string;
+      price: number;
+    };
+    var product: Product = {
+      name: `Brown rice`,
+      price: 300,
+    };
+    type ApplyDiscountFn = (discount: number) => number;
+    var discounted: ApplyDiscountFn = (discount) =>{var b:number= (discount / 100) * product.price
+    return product.price-b };
+    console.log(
+      `The product(${product.name})'s Original price is ${
+        product.price
+      } after 20% discount it's price is ${discounted(20)}`
+    );
+    
+    // // Q NO 11. Define a type Employee with properties name (string), position (string), and salary (number).
+    // // Implement a function type GetAnnualSalaryFn that calculates the annual salary of an Employee
+    interface Employee {
+      name: string;
+      position: string;
+      salary: number;
+    }
+    var employeeinfo: Employee = {
+      name: `Sheraz`,
+      position: `Super Visor`,
+      salary: 100000,
+    };
+    type GetAnnualSalaryFn = (annual: number) => number;
+    var annualSalary: GetAnnualSalaryFn = (annual) => employeeinfo.salary * annual;
+    console.log(
+      `${employeeinfo.name} position is ${
+        employeeinfo.position
+      } and his salary is ${annualSalary(12)}`
+    );
+     -->
+</body>
+
+</html>
